@@ -9,9 +9,11 @@
         "sourceType": "module"
     },
     "rules": {
-        'linebreak-style': [
-            'error',
-            process.platform === 'win32' ? 'windows' : 'unix'
-        ]
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-uses-react": "off",
     }
 }
