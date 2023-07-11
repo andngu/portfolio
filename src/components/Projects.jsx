@@ -1,6 +1,5 @@
 import { FaGithub } from "react-icons/fa";
 import { BsEyeFill } from "react-icons/bs";
-import test from "../assets/test.png";
 import financeDashboard from "../assets/financeDashboard.png";
 import pathfinding from "../assets/pathfinding.png";
 
@@ -21,15 +20,8 @@ function Projects() {
          site: "https://andngu.github.io/pathfinder-visualizer/",
          code: "https://github.com/andngu/pathfinder-visualizer/tree/master",
          title: "Pathfinder Visualizer",
-         description: <p>Application to help users visualize pathfinding algorithms like Breadth-First Search, Depth-First Search, Dijkstra&apos;s algorithm, and A* (in progress). With an interactive grid, users can add walls and observe algorithms in action.</p>,
+         description: <p>Application to help users visualize pathfinding algorithms like Breadth-First Search, Depth-First Search, Dijkstra&apos;s, and A* (in progress). With an interactive grid, users can add walls and observe algorithms in action.</p>,
          technologiesUsed: ["React", "Material UI"],
-      },
-      {
-         id: 3,
-         imgSrc: test,
-         title: "Project 3",
-         description: "Description for Project 3.",
-         technologiesUsed: ["Technology A", "Technology B", "Technology C"],
       },
    ];
 
