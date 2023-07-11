@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9ecdbac9.css",
-    "main.js": "/portfolio/static/js/main.058ee9e2.js",
+    "main.css": "/portfolio/static/css/main.c4c7e2bc.css",
+    "main.js": "/portfolio/static/js/main.d8d01f17.js",
     "static/media/test.png": "/portfolio/static/media/test.610a7c77c61946534a88.png",
     "static/media/financeDashboard.png": "/portfolio/static/media/financeDashboard.ef9e26aa7feeafd6a1d6.png",
+    "static/media/pathfinding.png": "/portfolio/static/media/pathfinding.3429aabe65654cbac9fe.png",
     "static/media/react.svg": "/portfolio/static/media/react.19465659ecf7a1122618d3dcf23bf337.svg",
     "static/media/graphql.svg": "/portfolio/static/media/graphql.542778d8d06e9987a6c39ee1321d2bbc.svg",
     "static/media/nodejs-icon.svg": "/portfolio/static/media/nodejs-icon.cc3d45a160579a330a5c17cc2c8f1407.svg",
@@ -13,11 +14,11 @@
     "static/media/tailwindcss-icon.svg": "/portfolio/static/media/tailwindcss-icon.7817889fda1887000f0e712239d42b5a.svg",
     "static/media/mongodb-icon.svg": "/portfolio/static/media/mongodb-icon.4688f9b5cd31b78325f782fd3d2cada2.svg",
     "index.html": "/portfolio/index.html",
-    "main.9ecdbac9.css.map": "/portfolio/static/css/main.9ecdbac9.css.map",
-    "main.058ee9e2.js.map": "/portfolio/static/js/main.058ee9e2.js.map"
+    "main.c4c7e2bc.css.map": "/portfolio/static/css/main.c4c7e2bc.css.map",
+    "main.d8d01f17.js.map": "/portfolio/static/js/main.d8d01f17.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ecdbac9.css",
-    "static/js/main.058ee9e2.js"
+    "static/css/main.c4c7e2bc.css",
+    "static/js/main.d8d01f17.js"
   ]
 }
