@@ -1,13 +1,15 @@
 import { FaGithub } from "react-icons/fa";
 import { BsEyeFill } from "react-icons/bs";
 import financeDashboard from "../assets/financeDashboard.png";
-import pathfinding from "../assets/pathfinding.png";
+import pathfinding from "../assets/pathfinding.mp4";
+import sudoku from "../assets/sudoku.mp4";
 
 function Projects() {
    const projects = [
       {
          id: 1,
-         imgSrc: financeDashboard,
+         mediaSrc: financeDashboard,
+         mediaType: "image",
          site: "https://finance-dashboard-lac.vercel.app/",
          code: "https://github.com/andngu/finance-dashboard",
          title: "Finance Dashboard",
@@ -16,12 +18,23 @@ function Projects() {
       },
       {
          id: 2,
-         imgSrc: pathfinding,
+         mediaSrc: pathfinding,
+         mediaType: "video",
          site: "https://andngu.github.io/pathfinder-visualizer/",
          code: "https://github.com/andngu/pathfinder-visualizer/tree/master",
          title: "Pathfinder Visualizer",
          description: <p>Application to help users visualize pathfinding algorithms like Breadth-First Search, Depth-First Search, Dijkstra&apos;s, and A* (in progress). With an interactive grid, users can add walls and observe algorithms in action.</p>,
          technologiesUsed: ["React", "Material UI"],
+      },
+      {
+         id: 3,
+         mediaSrc: sudoku,
+         mediaType: "video",
+         site: "https://summer-sun-5919.fly.dev/",
+         code: "https://github.com/andngu/sudoku-solver",
+         title: "Sudoku Solver",
+         description: <p>Interactive web-based Sudoku game. The game offers a new Sudoku puzzle for each new game and allows users to solve it interactively in their browsers. Also providing a solve feature which utilizes the backtracking algorithm to solve the puzzle.</p>,
+         technologiesUsed: ["Javascript", "Python", "Flask"],
       },
    ];
 
@@ -33,7 +46,7 @@ function Projects() {
             </div>
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 px-12 sm:px-0 ">
-               {projects.map(({ id, imgSrc, site, code, title, description, technologiesUsed }) => (
+               {projects.map(({ id, mediaSrc, mediaType, site, code, title, description, technologiesUsed }) => (
                   <div
                      key={id}
                      className="shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105"
@@ -49,31 +62,35 @@ function Projects() {
                            borderRadius: "0.375rem",
                         }}
                      >
-                        <img
-                           src={imgSrc}
-                           alt=""
-                           className="rounded-md"
-                           style={{
-                              transition: "opacity 0.3s ease-in-out",
-                              opacity: 1,
-                           }}
-                           onMouseOver={(e) => {
-                              e.currentTarget.style.opacity = 0.5;
-                              e.currentTarget.style.filter = "blur(5px)";
-                           }}
-                           onMouseOut={(e) => {
-                              e.currentTarget.style.opacity = 1;
-                              e.currentTarget.style.filter = "none";
-                           }}
-                           onFocus={(e) => {
-                              e.currentTarget.style.opacity = 0.5;
-                              e.currentTarget.style.filter = "blur(5px)";
-                           }}
-                           onBlur={(e) => {
-                              e.currentTarget.style.opacity = 1;
-                              e.currentTarget.style.filter = "none";
-                           }}
-                        />
+                        {mediaType === "image" ? (
+                           <img
+                              src={mediaSrc}
+                              alt=""
+                              className="rounded-md"
+                              style={{
+                                 transition: "opacity 0.3s ease-in-out",
+                                 opacity: 1,
+                              }}
+                              onMouseOver={(e) => {
+                                 e.currentTarget.style.opacity = 0.5;
+                                 e.currentTarget.style.filter = "blur(5px)";
+                              }}
+                              onMouseOut={(e) => {
+                                 e.currentTarget.style.opacity = 1;
+                                 e.currentTarget.style.filter = "none";
+                              }}
+                              onFocus={(e) => {
+                                 e.currentTarget.style.opacity = 0.5;
+                                 e.currentTarget.style.filter = "blur(5px)";
+                              }}
+                              onBlur={(e) => {
+                                 e.currentTarget.style.opacity = 1;
+                                 e.currentTarget.style.filter = "none";
+                              }}
+                           />
+                        ) : (
+                           <video src={mediaSrc} className="rounded-md" autoPlay loop muted style={{ objectFit: "cover", width: "100%", height: "100%" }} />
+                        )}
                         <div
                            className="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200"
                            style={{
