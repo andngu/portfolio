@@ -12,6 +12,8 @@ import cSVG from "../assets/c.svg";
 import pythonSVG from "../assets/python.svg";
 import muiSVG from "../assets/mui.svg";
 import matlabSVG from "../assets/matlab.svg";
+import dockerSVG from "../assets/docker.svg";
+import flaskSVG from "../assets/flask.svg";
 
 function Skills() {
    const technologies = [
@@ -98,6 +100,18 @@ function Skills() {
          src: matlabSVG,
          title: "Matlab",
          style: "shadow-[#e86e05]",
+      },
+      {
+         id: 15,
+         src: dockerSVG,
+         title: "Docker",
+         style: "shadow-[#00C9FF]",
+      },
+      {
+         id: 16,
+         src: flaskSVG,
+         title: "Flask",
+         style: "shadow-black",
       },
    ];
 

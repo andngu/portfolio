@@ -34,7 +34,7 @@ function Projects() {
          code: "https://github.com/andngu/sudoku-solver",
          title: "Sudoku Solver",
          description: <p>Interactive web-based Sudoku game. The game offers a new Sudoku puzzle for each new game and allows users to solve it interactively in their browsers. Also providing a solve feature which utilizes the backtracking algorithm to solve the puzzle.</p>,
-         technologiesUsed: ["Javascript", "Python", "Flask"],
+         technologiesUsed: ["Javascript", "Python", "Flask", "HTML", "CSS"],
       },
    ];
 
